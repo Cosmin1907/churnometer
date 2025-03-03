@@ -1,4 +1,4 @@
-# Telco Customer Churn Analysis  
+# Customer Churn Analysis  
 
 ## 📌 Project Overview  
 This project was completed as part of a **Code Institute** course, focusing on **data collection, processing, and machine learning** techniques to analyze **customer churn** for a telecommunications company.  
@@ -16,11 +16,6 @@ The workflow involves:
 ### **1️⃣ Data Collection Notebook**  
 **Objective:** Fetch and store raw data for analysis.  
 
-- **Inputs:**  
-  - `kaggle.json` (authentication token)  
-- **Outputs:**  
-  - `outputs/datasets/collection/TelcoCustomerChurn.csv`  
-
 💡 *Note: In a real-world workplace, data usually comes from multiple sources like internal data warehouses, not Kaggle.*  
 
 ---
@@ -28,35 +23,15 @@ The workflow involves:
 ### **2️⃣ Churned Customer Study Notebook**  
 **Objective:** Identify the key factors correlated with customer churn.  
 
-- **Inputs:**  
-  - `outputs/datasets/collection/TelcoCustomerChurn.csv`  
-- **Outputs:**  
-  - Analytical insights to be used in a **Streamlit App**  
-
 ---
 
 ### **3️⃣ Data Cleaning Notebook**  
 **Objective:** Handle missing data and clean the dataset.  
 
-- **Inputs:**  
-  - `outputs/datasets/collection/TelcoCustomerChurn.csv`  
-- **Outputs:**  
-  - `outputs/datasets/cleaned/TrainSet.csv`  
-  - `outputs/datasets/cleaned/TestSet.csv`  
-
-🛠 **Key Cleaning Steps:**  
-- Dropped unnecessary columns: `['customerID', 'TotalCharges']`  
-
 ---
 
 ### **4️⃣ Feature Engineering Notebook**  
-**Objective:** Create new features for **classification, regression, and clustering models**.  
-
-- **Inputs:**  
-  - `outputs/datasets/cleaned/TrainSet.csv`  
-  - `outputs/datasets/cleaned/TestSet.csv`  
-- **Outputs:**  
-  - List of engineered variables  
+**Objective:** Create new features for **classification, regression, and clustering models**.   
 
 🛠 **Techniques Used:**  
 - **Ordinal categorical encoding** for categorical variables  
@@ -68,7 +43,6 @@ The workflow involves:
 **Objective:** Predict whether a customer will churn or not.  
 
 - **Inputs:**  
-  - `outputs/datasets/collection/TelcoCustomerChurn.csv`  
   - Cleaned and engineered features  
 - **Outputs:**  
   - Model pipeline  
@@ -95,13 +69,6 @@ The workflow involves:
 - **Outputs:**  
   - **Cluster profiles**  
   - **Silhouette analysis**  
-
----
-
-## 🚀 Key Takeaways  
-✅ **End-to-End ML Pipeline:** Data collection → Cleaning → Feature Engineering → Model Development  
-✅ **Multiple ML Approaches:** Classification, Regression, Clustering  
-✅ **Business Insights:** Helping businesses understand churn patterns  
 
 ---
 
